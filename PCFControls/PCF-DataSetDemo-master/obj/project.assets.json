@@ -61,25 +61,27 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\DynamicsCode\\.nuget\\packages\\": {}
+    "C:\\Users\\Julian.Kohlhaas\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Tools\\CustomControl\\PCF-DataSetDemo\\PCF-DataSetDemo.pcfproj",
+      "projectUniqueName": "C:\\Users\\Julian.Kohlhaas\\source\\repos\\koju1020\\PCFVisuals\\PCFControls\\PCF-DataSetDemo-master\\PCF-DataSetDemo.pcfproj",
       "projectName": "PCF-DataSetDemo",
-      "projectPath": "C:\\Tools\\CustomControl\\PCF-DataSetDemo\\PCF-DataSetDemo.pcfproj",
-      "packagesPath": "C:\\Users\\DynamicsCode\\.nuget\\packages\\",
-      "outputPath": "C:\\Tools\\CustomControl\\PCF-DataSetDemo\\obj\\",
+      "projectPath": "C:\\Users\\Julian.Kohlhaas\\source\\repos\\koju1020\\PCFVisuals\\PCFControls\\PCF-DataSetDemo-master\\PCF-DataSetDemo.pcfproj",
+      "packagesPath": "C:\\Users\\Julian.Kohlhaas\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Julian.Kohlhaas\\source\\repos\\koju1020\\PCFVisuals\\PCFControls\\PCF-DataSetDemo-master\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\DynamicsCode\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Julian.Kohlhaas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net40"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

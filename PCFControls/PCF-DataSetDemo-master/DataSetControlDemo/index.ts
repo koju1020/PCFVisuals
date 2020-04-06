@@ -46,7 +46,8 @@ export class DataSetControlDemo implements ComponentFramework.StandardControl<II
 		// Add control initialization code
 		this.mainContainer = document.createElement("div");
 		this.mainContainer.setAttribute("style", "height:400px;");
-		container.appendChild(this.mainContainer);
+        container.appendChild(this.mainContainer);
+        console.log("init");
 	}
 
 
@@ -58,8 +59,13 @@ export class DataSetControlDemo implements ComponentFramework.StandardControl<II
 	{
 		// Add code to update control view
 		//let columns = context.parameters.dataSetGrid.columns;
+        console.log("Update View Start");
+
 		this.createNodes(context.parameters.dataSetGrid);
-		this.vis = new Vis.Network(this.mainContainer, { nodes: this.nodes, edges: this.edges}, {});
+        this.vis = new Vis.Network(this.mainContainer, { nodes: this.nodes, edges: this.edges }, {});
+
+        console.log("Update View End");
+
 	}
 
 	/** 
@@ -81,13 +87,15 @@ export class DataSetControlDemo implements ComponentFramework.StandardControl<II
 	}
  
 	private createNodes(gridParam: DataSet): void
-	{
+    {
+        console.log(gridParam);
 		for (let currentRecordId of gridParam.sortedRecordIds) {
 			let record1id = (gridParam.records[currentRecordId].getValue("record1id") as any).id.guid;
 			let record1name = gridParam.records[currentRecordId].getFormattedValue("record1id");
 			let record2id = (gridParam.records[currentRecordId].getValue("record2id") as any).id.guid;
 			let record2name = gridParam.records[currentRecordId].getFormattedValue("record2id");
-			let record2rolename = gridParam.records[currentRecordId].getFormattedValue("record2roleid");
+            let record2rolename = gridParam.records[currentRecordId].getFormattedValue("record2roleid");
+            console.log(record2rolename);
 			if (this.nodes.find(e => e.id === record2id) === undefined) {
 				this.nodes.push({
 					id: record2id, 
